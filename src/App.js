@@ -13,6 +13,9 @@ function App() {
 		fetch(url)
 			.then(response => response.json())
 			.then(data => {
+				//console.log(data);
+				//console.log(data.results);
+				//console.log(data.info);
 				setCharacters(data.results);
 				setInfo(data.info);
 			})
